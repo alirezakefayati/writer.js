@@ -17,7 +17,8 @@ function createEditor(lang = 'en', iframeId='writer-js', boxId='textEditor', def
     doc.getElementsByTagName('body')[0].innerHTML = defaultValue;
     let topBar = document.createElement("div");
     let textarea = document.createElement("textarea");
-    textarea.id = 'output';
+    textarea.id = 'output'+iframeId;
+    textarea.name = 'output'+iframeId;
     textarea.style.display = "none";
     box.appendChild(textarea);
     output = document.getElementById('output');
@@ -66,7 +67,6 @@ function toggleSourceCode(){
         doc.getElementsByTagName('body')[0].textContent = doc.getElementsByTagName('body')[0].innerHTML;
     }
 }
-// function changeOutput(){
-//     alert('hi')
-//     output.innerHTML = doc.getElementsByTagName('body')[0].innerHTML
-// }
+function getOutput(){
+    output.innerHTML = doc.getElementsByTagName('body')[0].innerHTML
+}
