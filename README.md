@@ -1,5 +1,5 @@
 # writer.js
-<img src="writerjs.png">
+<img src="image/writerjs.png">
 writer.js is a simple text editor in the web
 
 ## About writer.js:
