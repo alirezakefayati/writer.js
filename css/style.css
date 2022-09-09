@@ -1,0 +1,19 @@
+.button{
+    padding: 0.5rem;
+    cursor: pointer;
+}
+.button svg{
+    width: 1.25rem;
+}
+.select{
+    margin: 0.5rem;
+}
+.writer-js{
+    background-color: rgb(249, 249, 249);
+    width: 98.5%;
+    height: 200px;
+    margin: 0.5rem;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+}
