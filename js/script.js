@@ -145,7 +145,11 @@ class writer {
         this.topBar.appendChild(toggleSource) 
     }
 
-    getOutput() {
+    setOutput() {
         this.textarea.innerHTML = this.doc.getElementsByTagName('body')[0].innerHTML
+    }
+
+    getOutput() {
+        return this.doc.getElementsByTagName('body')[0].innerHTML
     }
 }
