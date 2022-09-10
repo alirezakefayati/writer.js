@@ -15,7 +15,6 @@ class writer {
         this.textarea.name = 'output' + iframeId;
         this.textarea.style.display = "none";
         this.box.appendChild(this.textarea);
-        this.output = document.getElementById('output');
 
         // create and select topBar
         this.topBar = document.createElement("div");
@@ -147,6 +146,6 @@ class writer {
     }
 
     getOutput() {
-        this.output.innerHTML = this.doc.getElementsByTagName('body')[0].innerHTML
+        this.textarea.innerHTML = this.doc.getElementsByTagName('body')[0].innerHTML
     }
 }
