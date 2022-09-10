@@ -4,6 +4,7 @@ writer.js is a simple text editor in the web
 
 ## ❓ About writer.js:
 This is a simple and lightweight editor for the web
+### demo: https://alirezakefayati.github.io/writer.js/
 
 ## 💻 How to use writer.js:
 1. download writer.js from github
