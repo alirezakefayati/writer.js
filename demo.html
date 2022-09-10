@@ -9,11 +9,11 @@
     <script src="js/script.js"></script>
 </head>
 <body>
-    <div id="textEditor">
+    <div id="editor-box">
         <iframe id="writer-js" class="writer-js"></iframe>
     </div>
 </body>
 <script>
-    createEditor('en','writer-js','textEditor','hello world','*{font-family: vazir;}')
+    let writerJs = new writer('fa', 'writer-js', 'editor-box','', '*{font-family: vazir;}')
 </script>
 </html>
