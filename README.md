@@ -18,15 +18,17 @@ This is a simple and lightweight editor for the web
     <iframe id="writer-js" class="writer-js"></iframe>
 </div>
 ```
-4. Open a script tag under the body and run the createEditor function
+4. Open a script tag under the body and We create a variable with the desired name and create a new object from the writer class. This class takes five inputs, the first three of which are mandatory.
 ```
-createEditor(lang, iframe id, div id, default value, style)
+let writerJs = new writer(lang, iframe Id, box Id, default value, style)
 ```
 > This function takes multiple inputs. The first input is the language of your editor. We support English and Farsi languages. The second and third inputs is your iframe ID and your div ID. The fourth input, which is optional, specifies the default text inside the editor. The fifth value is the styles you want for the text inside the editor.
 for example:
 ```
-createEditor('en', 'writer-js', 'textEditor', 'hello world', 'a{color: blue;}')
+createEditor('en', 'writer-js', 'editor-box', 'hello world', 'a{color: blue;}')
 ```
 ## 📃 How to get the content?
-Run output() function.
+Run writerJs.setOutput() method.
 After that, the content is available in a textarea with the name and ID output + iframe id.
+or run writerJs.getOutput() method.
+this method return text in editor.
