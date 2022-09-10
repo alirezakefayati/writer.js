@@ -8,7 +8,7 @@ let fa_keywords = {title:'عنوان',size:'اندازهٔ متن',default:'پی
 let en_keywords = {title:'title', size:'text size',default:'default',type:'type text',quotation:'quotation'};
 let output;
 
-function createEditor(lang = 'en', iframeId='writer-js', boxId='textEditor', defaultValue='', style='') {
+function createEditor(lang = 'en', iframeId='writer-js', boxId='editor-box', defaultValue='', style='') {
     iframe = document.getElementById(iframeId);
     box = document.getElementById(boxId);
     doc = iframe.contentDocument || iframe.contentWindow.document;
