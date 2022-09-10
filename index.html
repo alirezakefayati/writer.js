@@ -13,9 +13,9 @@
         <iframe id="writer-js" class="writer-js"></iframe>
     </div>
     <button onclick="writerJs.setOutput()">set output in hidden textarea</button>
-    <button onclick="alert(writerJs.getOutput())">alert output with getOutput function</button>
+    <button onclick="cosole.log(writerJs.getOutput())">log output with getOutput function</button>
 </body>
 <script>
-    let writer_js = new writer('fa', 'writer-js', 'editor-box','', '*{font-family: vazir;}')
+    let writer_js = new writer('en', 'writer-js', 'editor-box','', '*{font-family: vazir;}')
 </script>
 </html>
